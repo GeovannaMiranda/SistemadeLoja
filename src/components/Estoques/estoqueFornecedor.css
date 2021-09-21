@@ -17,6 +17,7 @@ div{
 }
 #titulo{
    margin: 5% 0 0 0;
+   color: #007BFF;
 
 }
 .Campo3{
@@ -25,12 +26,13 @@ div{
     color: #363636;
 
 }
-.Camp{
+.Campo4{
     display: grid;
     justify-self: end;
     width: 25%;
+    
 }
-.botao{
+#botao{
     width: 10%;
     justify-self: end;
 }

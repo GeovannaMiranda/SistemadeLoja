@@ -1,32 +1,45 @@
-import { Select, TextField, InputLabel } from "@material-ui/core";
+import { Select, TextField, InputLabel, MenuItem } from "@material-ui/core";
 import React from "react";
 import { Button, Container, Input, Label } from "reactstrap";
 import '../Estoqueloja/estoque.css';
+import MenuSuperior from "../menuSuperior/MenuSuperior";
 
 const EstoqueLoja = (props) => {
     return (
         <div>
-            <Container lassName="Container">
+            <MenuSuperior/>
+            <Container lassName="ContainerEstoque">
                 <h2 id='titulo'>Estoque Loja</h2>
                 <hr id='linha'></hr>
 
-               
-
                 <div className='Campo'>
-                   
-                    <Select label='Revista'></Select>
-                    <TextField Label="Fornecedor" />
-                    <TextField Label="Página" />
-                    <TextField Label="Referência" />
-                    <TextField Label="Item" />
+                    <InputLabel>Revista</InputLabel>
+                    <Select>
+                        <MenuItem value="disable">Selecione Opção</MenuItem>
+                        <MenuItem></MenuItem>
+                    </Select>
+                    <TextField label="Fornecedor" />
+                    <TextField label="Página" />
+                    <TextField label="Referência" />
+                    <TextField label="Item" />
                 </div>
 
-                <TextField Label="Estoque menor igual à: " />
+                <div className="Campo1" >
+                    <TextField
+                        id="Campo"
+                        label="Estoque menor igual à: "
+                        type="number"
+                        InputLabelProps={{
+                            shrink: true,
+                        }}
+                    />
+                    <Button color='btn btn-primary' className='Botaofil'>Filtrar</Button>
+                </div>
 
-                <Button color='btn btn-primary' className="Botao">Filtrar</Button>
-
-                <TextField Label="Total Estoque" />
-                <TextField Label="Valor Total Estoque" />
+                <div className="Campo2">
+                    <TextField label="Total Estoque" />
+                    <TextField label="Valor Total Estoque" />
+                </div>
             </Container>
         </div>
     );

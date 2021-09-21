@@ -4,9 +4,32 @@ div{
     grid-gap: 10px;
 
 }
-.Container{
+.ContainerEstoque{
     display: grid;
     grid-column: 1/3;
     justify-content: center;
     align-content: center;
+}
+.Campo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Campo1{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+#Campo{
+    width: 40%;
+}
+.Campo2{
+    display: grid;
+    width: 30%;
+    justify-self: end;
+    margin: 20% 0 0 0;
+    
+}
+.Botaofil{
+    width: 10%;
+
 }

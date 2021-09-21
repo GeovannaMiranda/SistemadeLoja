@@ -9,6 +9,7 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import moment from 'moment';
 import { ptBR } from 'date-fns/locale'
+import MenuSuperior from "../menuSuperior/MenuSuperior";
 
 const for_cod = localStorage.getItem('for_cod')
 
@@ -51,21 +52,27 @@ const Movimentacoes = (props) => {
 
     return (
         <div>
-            <Container className="Container">
+            <MenuSuperior/>
+            <Container className="Cabecalho">
                 <h2 id='titulo'>Movimentação Loja</h2>
                 <hr id="linha"></hr>
                 <h6>Tipo de Movimentação</h6>
                 <div className="caixa">
-                    <Input type="checkbox" >Entradas</Input>
-                    <Input type="checkbox" >Pedidos</Input>
+                    <Input type="checkbox" ></Input>                  
+                    <Label style={{margin: "0 0 0 -14%", fontFamily: "Roboto, sans-serif"}}>Entradas</Label>
+                    <Input type="checkbox" ></Input>
+                    <Label style={{margin: "0 0 0 -14%", fontFamily: "Roboto, sans-serif"}}>Pedidos</Label>
                     <Input type="checkbox" >Trocas</Input>
-                    <Input type="checkbox" >Devoluções</Input>
-                    <Input type="checkbox" >Cancelamento</Input>
+                    <Label style={{margin: "0 0 0 -14%", fontFamily: "Roboto, sans-serif"}}>Trocas</Label>
+                    <Input type="checkbox" ></Input>
+                    <Label style={{margin: "0 0 0 -14%", fontFamily: "Roboto, sans-serif"}}>Devoluções</Label>
+                    <Input type="checkbox" ></Input>
+                    <Label style={{margin: "0 0 0 -14%", fontFamily: "Roboto, sans-serif"}}>Cancelamento</Label>
                 </div>
                 <h6 id='titulo2'>Data de Movimentação</h6>
-                <div className='data'>
+                <div className='datamets'>
                     <DatePicker
-                        id='data'
+                        id='dataped'
                         placeholderText='De:'
                         onChange={onChange}
                         selected={selectDateIni}
@@ -76,7 +83,7 @@ const Movimentacoes = (props) => {
                     />
                     <DatePicker
                         placeholderText='Até:'
-                        id="data1"
+                        id="dataped1"
                         onChange={onChange1}
                         selected={selectDateFim}
                         locale={ptBR}
@@ -85,11 +92,12 @@ const Movimentacoes = (props) => {
 
                     />
                 </div>
-                <div className='Campo'>
+                <div className='CampoMovimentacao'>
                     <TextField label="Fornecedores" />
-                    <TextField Label="Vendedores"/>
-                    <TextField Label="Nome Cliente" />
-                    <TextField Label="CPF/CNPJ"/>
+                    <TextField label="Vendedoras"/>                    
+                
+                    <TextField label="Nome Cliente"/>
+                    <TextField label="CPF/CNPJ"/>
                 </div>
                 <Button color='btn btn-primary' className="botao">Filtrar</Button>
             </Container>

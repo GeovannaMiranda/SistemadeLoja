@@ -15,11 +15,11 @@
 }
 hr{
     margin: 5px 0 0 15px;
-    width: 200%;
+    width: 100%;
     border-color:#007bff;
 }
 
-div .Campo{
+div .CampoMetas{
     display: flex;
     margin: 50px 0 0 15px;
     color: #363636;
@@ -50,7 +50,7 @@ div .Botao{
     margin: 0 0 0 60px;
     border-radius: none;
     border: none;
-    width: 45%;
+    width: 10%;
     height: 35px;
     font-size: 17px;
     color: #fff;
@@ -67,5 +67,59 @@ div .Botao{
     background: white;
     color: #007bff;
 }
+/* css metas vendedoras*/
+
+.Campomet{
+    display: flex;
+}
+#datamet {
+
+    width: 115%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+#datamet1 {
+    width: 90%;
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+/*css movimentacoes*/
+
+.datamets{
+    display: flex;
+}
+#dataped {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+#dataped1 {
+    width: 70%;
+    margin-left: 90px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+
+
 
 

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { Button, Container } from "reactstrap";
-import { Row, Cell, StickyTable } from 'react-table-sticky';
+import { Row, Cell, StickyTable } from 'react-sticky-table';
+import "../menuSuperior/MenuSuperior"
 import "../MetasLoja/metas.css";
+
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import moment from 'moment';
 import { ptBR } from 'date-fns/locale'
+import MenuSuperior from "../menuSuperior/MenuSuperior";
 
 
 const for_cod = localStorage.getItem('for_cod')
@@ -51,16 +54,18 @@ const datainicial = moment(selectDateIni).format("YYYYMMDD")
 const datafinal = moment(selectDateFim).format("YYYYMMDD")
 
     return (
+        
         <div>
+            <MenuSuperior/>
             <Container className='Cabecalho'>
                 <div>
                     <h2 id="Titulo1">Acompanhamento de Metas</h2>
                     <hr></hr>
                 </div>
-                <div className='Campo'>
+                <div className='CampoMetas'>
                     <DatePicker
                         id='data'
-                        placeholderText='De:'
+                        placeholderText='Data inicial:'
                         onChange={onChange}
                         selected={selectDateIni}
                         locale={ptBR}
@@ -69,7 +74,7 @@ const datafinal = moment(selectDateFim).format("YYYYMMDD")
                         type='reset'
                     />
                     <DatePicker
-                        placeholderText='Até:'                     
+                        placeholderText='Data final:'                     
                         id="data1"
                         onChange={onChange1}
                         selected={selectDateFim}
@@ -80,7 +85,7 @@ const datafinal = moment(selectDateFim).format("YYYYMMDD")
                     />
                     <Button className="Botao" color='btn btn-primary'>Filtrar</Button>
                 </div>
-                {/*<StickyTable className="Tabela" >
+                <StickyTable className="Tabela" >
                     <Row>
                         <Cell style={{ background: '#007bff', color: 'white' }}> ----- </Cell>
                     </Row>
@@ -90,7 +95,9 @@ const datafinal = moment(selectDateFim).format("YYYYMMDD")
 
                     </Row>
 
-                </StickyTable>*/}
+                </StickyTable>
+
+                <h6>Meta mensal:</h6>
             </Container>
            
         </div>

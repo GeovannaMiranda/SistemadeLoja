@@ -32,7 +32,7 @@ div{
  
 }
 #data {
-    width: 100%;
+    width: 97%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -41,7 +41,7 @@ div{
     font-size: 17px;    
 } 
 #data1 {
-    width: 85%;
+    width: 80%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -54,4 +54,32 @@ div{
     width: 15%;
     justify-self: end;
 }
+.CampoMovimentacao{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.CampMovi{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+/*css pedido e troca*/
+.Ped{
+    width: 30%;
+    justify-self: end;
+}
+.meta{
+    width: 30%;
+    justify-self: end;
+}
+.buton{
+    width: 10%;
+}
 
+/*css lançamento*/
+
+.CampoLan{
+    width: 40%;
+    justify-self: end;
+}

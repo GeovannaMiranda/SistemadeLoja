@@ -1,25 +1,25 @@
-import { TextField } from "@material-ui/core";
+import { MenuItem, Select, TextField } from "@material-ui/core";
 import React from "react";
-import { Button, Label } from "reactstrap";
+import { Button, Container} from "reactstrap";
+
+import MenuSuperior from "../menuSuperior/MenuSuperior";
 
 const Brinde = (props) => {
-    return(
+    return (
         <div>
-            <h2>Sistema Controle de Brinde</h2>
-            <hr></hr>
+            <MenuSuperior />
+            <Container>
+                <h2>Sistema Controle de Brinde</h2>
+                <hr></hr>
 
+                <TextField > CPF/CNPJ</TextField>
+                <Select>Escolha o Brinde</Select>
+                    <MenuItem></MenuItem>
 
-            <TextField > CPF/CNPJ</TextField>
-            <Label>Escolha o Brinde</Label>
-            <input>
-               <option></option>
-            </input>
+                <Button>Registrar</Button>
+                <p>logo think</p>
 
-            <Button>Registrar</Button>
-            <p>logo think</p>
-
-        
-
+            </Container>
         </div>
     );
 }
