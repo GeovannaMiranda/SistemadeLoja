@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Button, Input, Label } from "reactstrap";
+import { Button, Input, Label,Container } from "reactstrap";
 import { TextField } from '@material-ui/core';
-import { Container } from "reactstrap";
 
 import "../Movimentacoes_Lojas/movimentacao.css";
 
@@ -11,7 +10,7 @@ import moment from 'moment';
 import { ptBR } from 'date-fns/locale'
 import MenuSuperior from "../menuSuperior/MenuSuperior";
 
-const for_cod = localStorage.getItem('for_cod')
+
 
 const Movimentacoes = (props) => {
     function hoje() {
@@ -53,7 +52,7 @@ const Movimentacoes = (props) => {
     return (
         <div>
             <MenuSuperior/>
-            <Container className="Cabecalho">
+            <Container>
                 <h2 id='titulo'>Movimentação Loja</h2>
                 <hr id="linha"></hr>
                 <h6>Tipo de Movimentação</h6>

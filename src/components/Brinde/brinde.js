@@ -1,4 +1,3 @@
-import { MenuItem, Select, TextField } from "@material-ui/core";
 import React from "react";
 import { Button, Container} from "reactstrap";
 
@@ -9,15 +8,12 @@ const Brinde = (props) => {
         <div>
             <MenuSuperior />
             <Container>
-                <h2>Sistema Controle de Brinde</h2>
-                <hr></hr>
+                <h2 id='titulo'>Sistema Controle de Brinde</h2>
+                <hr id='linha'></hr>
 
-                <TextField > CPF/CNPJ</TextField>
-                <Select>Escolha o Brinde</Select>
-                    <MenuItem></MenuItem>
 
-                <Button>Registrar</Button>
-                <p>logo think</p>
+                <Button color='btn  btn-primary'>Registrar</Button>
+                <p >logo think</p>
 
             </Container>
         </div>

@@ -18,7 +18,12 @@ hr{
     width: 100%;
     border-color:#007bff;
 }
-
+.meta{
+    justify-self: end;
+}
+.Tabela1{
+    margin: 10px 0 0 0;
+}
 div .CampoMetas{
     display: flex;
     margin: 50px 0 0 15px;
@@ -118,8 +123,14 @@ div .Botao{
     height: 2rem;
     font-size: 17px;    
 } 
-
-
+.Table{
+    display: grid;
+    width: 70%;
+    margin: 0 0 0 0;
+}
+.Campo4{
+    margin: -115px 0 0 0;
+}
 
 
 

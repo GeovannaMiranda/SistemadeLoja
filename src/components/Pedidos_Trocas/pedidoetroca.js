@@ -1,6 +1,7 @@
 import { TextField } from "@material-ui/core";
 import React, { useState } from "react";
 import { Button, Container } from "reactstrap";
+import {Cell, Row, StickyTable} from "react-sticky-table";
 
 
 
@@ -63,6 +64,20 @@ const PedidoTroca = (props) => {
                     <Button className="buton" color="btn btn-primary">Filtrar</Button>
                 </div>
                 
+                <StickyTable className='Tab'>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> </Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> CPF/CNPJ</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff'}}> Cliente Documento</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> Pedidos</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> Trocas</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff'}}> Total</Cell>
+
+
+                    <Row className="cabecalho2">
+                        
+                    </Row>
+
+                </StickyTable>
                
 
                 <div className="Ped">
@@ -70,7 +85,18 @@ const PedidoTroca = (props) => {
                     <TextField label='Valor Torca: ' >Valor Troca</TextField>
                     <TextField label='Valor Total: ' >Valor Total</TextField>
                     <Button className="meta" color='btn btn-primary'>Metas</Button>
-                    <p >tabela</p>
+                    
+                    <StickyTable className='Tab2'>
+                        <Cell style={{ background: '#007bff', color: '#fff'}}></Cell>
+                        <Cell style={{ background: '#007bff', color: '#fff'}}>Vendedor</Cell>
+                        <Cell style={{ background: '#007bff', color: '#fff'}}>Pedido</Cell>
+                        <Cell style={{ background: '#007bff', color: '#fff'}}>Troca</Cell>
+                        <Cell style={{ background: '#007bff', color: '#fff'}}>Total</Cell>
+
+                        <Row className='cabecalho2'>
+                            
+                        </Row>
+                    </StickyTable>
                 </div>
             </Container>
         </div>

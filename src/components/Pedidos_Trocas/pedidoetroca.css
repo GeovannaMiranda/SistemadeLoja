@@ -28,3 +28,9 @@ div{
 .buton{
     width: 30%;
 }
+.Tab{
+    display: grid;
+    width: 90%;
+}
+
+

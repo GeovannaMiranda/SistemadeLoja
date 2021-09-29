@@ -14,3 +14,9 @@
 .botao2{
     margin: 20px 0 0 0;
 }
+/*css pedidos e trocas*/
+
+.Tab{
+    display: grid;
+    width: 65%;
+}

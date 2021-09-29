@@ -1,6 +1,7 @@
 import { TextField } from "@material-ui/core";
 import React, { useState } from "react";
 import { Button, Container, Input, Label } from "reactstrap";
+import {Cell, Row, StickyTable} from  "react-sticky-table";
 
 import "../Lancamento_Caixa/lancamento.css";
 
@@ -63,8 +64,23 @@ const Lancamento = (props) => {
                     <Button className="buton" color="btn btn-primary">Filtrar</Button>
                 </div>
                 
+                  
+                <StickyTable className='Tab'>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> </Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> CPF/CNPJ</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff'}}> Cliente Documento</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> Total</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff'}}> Lançar</Cell>
+                    <Cell style={{ background: '#007bff', color: '#fff' }}> Lançado</Cell>
+                   
 
-                <p>tabela</p>
+
+                    <Row className="cabecalho2">
+                        
+                    </Row>
+
+                </StickyTable>
+
                 <div className="CampLan">
                     <TextField label="Data Caixa:" ></TextField>
                     <TextField label="Valor Total Caixa: " ></TextField>
