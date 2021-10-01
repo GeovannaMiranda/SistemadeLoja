@@ -1,6 +1,6 @@
 import { Select, TextField, InputLabel, MenuItem } from "@material-ui/core";
 import React from "react";
-import { Button, Container, Input, Label } from "reactstrap";
+import { Button, Container } from "reactstrap";
 import {StickyTable, Cell, Row} from "react-sticky-table";
 import '../Estoqueloja/estoque.css';
 import MenuSuperior from "../menuSuperior/MenuSuperior";
@@ -9,7 +9,7 @@ const EstoqueLoja = (props) => {
     return (
         <div>
             <MenuSuperior />
-            <Container lassName="ContainerEstoque">
+            <Container >
                 <h2 id='titulo'>Estoque Loja</h2>
                 <hr id='linha'></hr>
 
@@ -64,7 +64,7 @@ const EstoqueLoja = (props) => {
                             shrink: true,
                         }}
                     />
-                    <Button color='btn btn-primary' className='Botaofil'>Filtrar</Button>
+                    <Button color='btn btn-primary' className='Botaoestoqueloja'>Filtrar</Button>
                 </div>
                 
                 <StickyTable className="Tableestoqueloja">
@@ -77,12 +77,12 @@ const EstoqueLoja = (props) => {
 
 
                         <Row className="cabecalho2">
-                            <Cell style={{ background: '#DCDCDC' }}>1</Cell>
+                            <Cell style={{ background: '#DCDCDC' }}></Cell>
                         </Row>
 
                         
                         <Row className="cabecalho2">
-                            <Cell>2</Cell>
+                            <Cell></Cell>
                         </Row>
                     </StickyTable>
 

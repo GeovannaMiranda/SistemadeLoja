@@ -1,9 +1,9 @@
 import { TextField } from "@material-ui/core";
 import React, { useState } from "react";
-import { Button, Container } from "reactstrap";
+import { Button, Container} from "reactstrap";
 import {Cell, Row, StickyTable} from "react-sticky-table";
 
-
+import '../Pedidos_Trocas/pedidoetroca.css';
 
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
@@ -47,12 +47,13 @@ const PedidoTroca = (props) => {
     return (
         <div>
             <MenuSuperior/>
-            <Container >
+            <Container>
+            
                 <h2 id='titulo'>Think - Pedido/Troca</h2>
                 <hr id="linha"></hr>
-                <div className="data">
+                <div className="dataped">
                     <DatePicker
-                        id='data'
+                        id='datapedido'
                         placeholderText='Data Caixa:'
                         onChange={onChange}
                         selected={selectDateIni}
@@ -61,10 +62,10 @@ const PedidoTroca = (props) => {
                         withPortal
                         type='reset'
                     />
-                    <Button className="buton" color="btn btn-primary">Filtrar</Button>
+                    <Button className="botaopedido" color="btn btn-primary">Filtrar</Button>
                 </div>
                 
-                <StickyTable className='Tab'>
+                <StickyTable className='Tabelapedido'>
                     <Cell style={{ background: '#007bff', color: '#fff' }}> </Cell>
                     <Cell style={{ background: '#007bff', color: '#fff' }}> CPF/CNPJ</Cell>
                     <Cell style={{ background: '#007bff', color: '#fff'}}> Cliente Documento</Cell>
@@ -98,6 +99,8 @@ const PedidoTroca = (props) => {
                         </Row>
                     </StickyTable>
                 </div>
+
+        
             </Container>
         </div>
     );

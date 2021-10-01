@@ -1,9 +1,9 @@
-div{
+/*div{
     display: grid;
-    grid-template-columns: repeat(3. 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 
-}
+}*/
 .ContainerEstoque{
     display: grid;
     grid-column: 1/3;
@@ -35,8 +35,9 @@ div{
  
     
 }
-.Botaofil{
+.Botaoestoqueloja{
     width: 10%;
+    margin: 12px 0 25px 0;
 
 }
 

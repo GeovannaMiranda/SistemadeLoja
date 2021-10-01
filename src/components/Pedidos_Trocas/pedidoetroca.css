@@ -1,13 +1,13 @@
-div{
+.Corpo{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 5px;
 }
-.CorpoPed{
+.containerpedido{
     display: grid;
-    grid-column: 1/3;
+    grid-gap: 5px;
     justify-content: center;
-    align-content: center;
+
 }
 .h2{
     margin: 5% 0 0 0;
@@ -25,12 +25,51 @@ div{
     height: 2rem;
     font-size: 17px;  
 }
-.buton{
-    width: 30%;
+.botaopedido{
+    width: 10%;
+    margin-bottom: 25px;
 }
-.Tab{
+.Tabelapedido{
     display: grid;
-    width: 90%;
+    width: 65%;
+    
 }
 
+.dataped{
+    display: flex;
+}
+#datapedido {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+#datapedido1 {
+    width: 70%;
+    margin-left: 90px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+.Table{
+    display: grid;
+    width: 70%;
+    margin: 0 0 0 0;
+}
+.Campo4{
+    margin: -115px 0 0 0;
+}
+.botaomov{
+    display: grid;
+    justify-self: end;
+    width: 10%;
+    margin: 5px 0 0 0;
+}
 

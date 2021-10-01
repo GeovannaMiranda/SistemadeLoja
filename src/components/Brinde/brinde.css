@@ -1,6 +1,6 @@
 .logobrinde{
     display: grid;
-    width: 30%;
+    width: 25%;
     justify-self: center;
     margin: 60px;
 }
@@ -13,10 +13,18 @@
 .labelbrinde{
     display: grid;
     margin: 20px 0 0 0;
+
+    justify-self: center;
+}
+.selectbrinde{
+    display: grid;
+    width: 80%;
     justify-self: center;
 }
 .botaobrinde{
     display: grid;
+    width: 80%;
+    justify-self: center;
     margin: 15px 0 0 0;
    
 }

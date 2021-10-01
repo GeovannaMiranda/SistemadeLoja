@@ -1,9 +1,10 @@
-div{
+/*div{
     display: grid;
-    grid-template-columns: repeat(3. 1fr);
+    grid-template-columns: repeat(3 1fr);
     grid-gap: 10px;
 
-}
+}*/
+
 .Container{
     display: grid;
     grid-column: 1/3;
@@ -11,28 +12,34 @@ div{
     align-content: center;
 }
 
-#linha{
+#linhafornecedor{
     width: 100%;
     margin-left: 0;
 }
-#titulo{
+#titulofornecedor{
    margin: 5% 0 0 0;
    color: #007BFF;
 
 }
-.Campo3{
+.Campoestoquefornecedor{
     display: flex;
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 0;
     color: #363636;
 
 }
-.Campo4{
-    display: grid;
+.Campofornecedor{
+    display: grid;    
     justify-self: end;
     width: 25%;
     
 }
-#botao{
+#botaofornecedor{
     width: 10%;
+    height: min-content;
+    margin: 12px;
     justify-self: end;
+}
+.tabelaestoquefornecedor{
+    width: 70%;
+    margin-top: 20px;
 }

@@ -14,13 +14,37 @@
 #Botao{
     width: 10%;
     margin-left: 3%;
+    height: min-content;
+    
 }
 .botao2{
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 }
-/*css pedidos e trocas*/
 
-.Tab{
-    display: grid;
-    width: 65%;
+/* css metas vendedoras*/
+
+.Campomet{
+    display: flex;
+    margin-bottom: 10px;
 }
+#datamet {
+
+    width: 115%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+#datamet1 {
+    width: 90%;
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;  
+      
+} 

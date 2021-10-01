@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button, Input, Label,Container } from "reactstrap";
+import { Button, Input, Label,Container} from "reactstrap";
 import { TextField } from '@material-ui/core';
+import {Row, Cell, StickyTable} from 'react-sticky-table';
 
 import "../Movimentacoes_Lojas/movimentacao.css";
 
@@ -71,7 +72,7 @@ const Movimentacoes = (props) => {
                 <h6 id='titulo2'>Data de Movimentação</h6>
                 <div className='datamets'>
                     <DatePicker
-                        id='dataped'
+                        id='datamovimentacao'
                         placeholderText='De:'
                         onChange={onChange}
                         selected={selectDateIni}
@@ -82,7 +83,7 @@ const Movimentacoes = (props) => {
                     />
                     <DatePicker
                         placeholderText='Até:'
-                        id="dataped1"
+                        id="datamovimentacao1"
                         onChange={onChange1}
                         selected={selectDateFim}
                         locale={ptBR}
@@ -99,6 +100,66 @@ const Movimentacoes = (props) => {
                     <TextField label="CPF/CNPJ"/>
                 </div>
                 <Button color='btn btn-primary' className="botaomov">Filtrar</Button>
+
+                { /* Entrada */ }
+                <StickyTable>
+                    <Cell style={{ background: '#007bff', color: 'white' }}></Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Documento</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Vendedor</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Itens</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Total</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Data</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Hora</Cell>
+                    <Row></Row>
+                    <Row></Row>
+                </StickyTable>
+
+                { /* Devolução */ }
+                <StickyTable>
+                    <Cell style={{ background: '#007bff', color: 'white' }}></Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Documento</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Vendedor</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Itens</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Total</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Data</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Hora</Cell>
+                    <Row></Row>
+                    <Row></Row>
+                </StickyTable>
+
+                { /* Pedido */ }
+                <StickyTable>
+                    <Cell style={{ background: '#007bff', color: 'white' }}></Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Doc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>CPF/CNPJ</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Itens</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Desc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Acrésc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Vendedor</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Data</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Hora</Cell>
+                    
+
+                    <Row></Row>
+                </StickyTable>
+
+                { /* Troca */ }
+                <StickyTable>
+                    <Cell style={{ background: '#007bff', color: 'white' }}></Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Doc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>CPF/CNPJ</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Itens</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Desc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Acrésc</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Vendedor</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Data</Cell>
+                    <Cell style={{ background: '#007bff', color: 'white' }}>Hora</Cell>
+                    
+
+                    <Row></Row>
+                </StickyTable>
+
+
             </Container>
         </div>
     );

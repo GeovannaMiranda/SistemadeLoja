@@ -12,18 +12,18 @@ const EstoqueFornecedor = (props) => {
     return (
         <div>
             <MenuSuperior />
-            <Container className="ContainerEst">
+            <Container >
                 <div>
-                    <h2 id='titulo'>Estoque Fornecedor</h2>
-                    <hr id='linha'></hr>
+                    <h2 id='titulofornecedor'>Estoque Fornecedor</h2>
+                    <hr id='linhafornecedor'></hr>
                 </div>
 
-                <div className='Campo3'>
+                <div className='Campoestoquefornecedor'>
                     <TextField label="Fornecedor" />
-                    <Button id='botao' color='btn btn-primary'>Filtrar</Button>
+                    <Button id='botaofornecedor' color='btn btn-primary'>Filtrar</Button>
                 </div>
 
-                    <StickyTable className="Table">
+                    <StickyTable className="tabelaestoquefornecedor">
                         <Cell style={{ background: '#007bff', color: 'white' }}>#</Cell>
                         <Cell style={{ background: '#007bff', color: 'white' }}>Fornecedor</Cell>
                         <Cell style={{ background: '#007bff', color: 'white' }}>Estq.Loja</Cell>
@@ -42,7 +42,7 @@ const EstoqueFornecedor = (props) => {
                         </Row>
                     </StickyTable>
 
-                    <div className="Campo4">
+                    <div className="Campofornecedor">
                         <TextField label="Total Estoque">Total Estoque</TextField>
                         <TextField label="Valor Total Estoque">Valor Total Estoque</TextField>
                     </div>

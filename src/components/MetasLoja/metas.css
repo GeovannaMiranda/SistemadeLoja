@@ -6,6 +6,7 @@
 .container{
     display: grid;
     grid-gap: 5px;
+  
 
 }
 #Titulo1{
@@ -22,18 +23,18 @@ hr{
     justify-self: end;
 }
 .Tabela1{
-    margin: 10px 0 0 0;
-}
+    margin: 10px 0 0 0;}
+
 div .CampoMetas{
     display: flex;
-    margin: 50px 0 0 15px;
+    margin: 20px 0 25px 0;
     color: #363636;
 
 }
 #data {
     display: flex;
     justify-content: space-between;
-    width: 125%;
+    width: 110%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -42,7 +43,7 @@ div .CampoMetas{
     font-size: 17px;    
 } 
 #data1 {
-    width: 100%;
+    width: 90%;
     margin-left: 50px;
     background-color: transparent;
     border: none;
@@ -72,71 +73,8 @@ div .Botao{
     background: white;
     color: #007bff;
 }
-/* css metas vendedoras*/
 
-.Campomet{
-    display: flex;
-}
-#datamet {
 
-    width: 115%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
-#datamet1 {
-    width: 90%;
-    margin-left: 50px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
-
-/*css movimentacoes*/
-
-.datamets{
-    display: flex;
-}
-#dataped {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
-
-#dataped1 {
-    width: 70%;
-    margin-left: 90px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
-.Table{
-    display: grid;
-    width: 70%;
-    margin: 0 0 0 0;
-}
-.Campo4{
-    margin: -115px 0 0 0;
-}
-.botaomov{
-    display: grid;
-    justify-self: end;
-    width: 10%;
-    margin: 5px 0 0 0;
-}
 
 
 

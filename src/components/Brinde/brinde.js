@@ -3,14 +3,14 @@ import React from "react";
 import { Button, Container } from "reactstrap";
 import logo from '../img/colorido.png'
 import MenuSuperior from "../menuSuperior/MenuSuperior";
-import './brinde.css';
+import '../Brinde/brinde.css';
 const Brinde = (props) => {
     return (
         <div>
             <MenuSuperior />
             <Container>
-                <h2 id='titulo'>Sistema Controle de Brinde</h2>
-                <hr id='linha'></hr>
+                <h2 id='titulo' style={{color: '#007BFF'}}>Sistema Controle de Brinde</h2>
+                <hr id='linhabrinde'></hr>
 
                 <TextField label='CPF/CNPJ' className='campobrinde'></TextField>
 

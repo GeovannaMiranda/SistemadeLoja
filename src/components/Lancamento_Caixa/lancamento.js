@@ -50,9 +50,9 @@ const Lancamento = (props) => {
                 <h2 id='titulo'>Think - Lançamento de Caixa</h2>
                 <hr id='linha'></hr>
 
-                <div className="data">
+                <div className="Campolan">
                     <DatePicker
-                        id='data'
+                        id='datalancamento'
                         placeholderText='Data Caixa:'
                         onChange={onChange}
                         selected={selectDateIni}
@@ -61,11 +61,11 @@ const Lancamento = (props) => {
                         withPortal
                         type='reset'
                     />
-                    <Button className="buton" color="btn btn-primary">Filtrar</Button>
+                    <Button className="botaolancamento" color="btn btn-primary">Filtrar</Button>
                 </div>
                 
                   
-                <StickyTable className='Tab'>
+                <StickyTable className='Tabelalancamento'>
                     <Cell style={{ background: '#007bff', color: '#fff' }}> </Cell>
                     <Cell style={{ background: '#007bff', color: '#fff' }}> CPF/CNPJ</Cell>
                     <Cell style={{ background: '#007bff', color: '#fff'}}> Cliente Documento</Cell>
@@ -89,9 +89,9 @@ const Lancamento = (props) => {
                     <Label for="exampleText" color="#696969">Observação:</Label>
                     <Input type="textarea" name="text" id="exampleText" />
 
-                    <Button id='blan' color='btn btn-primary' >Salvar</Button>
-                    <Button id='blan' color='btn btn-primary' >Fechar Caixa</Button>
-                    <Button id='blan' color='btn btn-primary' >Relatório</Button>
+                    <Button id='botaolan'  color='btn btn-primary' >Salvar</Button>
+                    <Button id='botaolan1' color='btn btn-primary' >Fechar Caixa</Button>
+                    <Button id='botaolan2' color='btn btn-primary' >Relatório</Button>
                 </div>
             </Container>
         </div>

@@ -9,4 +9,24 @@
 #blan2{
     width: 60%;
     justify-self: end;
+    
+}
+.Campolan{
+    display: flex;
+}
+#datalancamento {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+.botaolancamento{
+    width: 10%;
+    margin-bottom: 25px;
+}
+.Tabelalancamento{
+    width: 70%;
 }

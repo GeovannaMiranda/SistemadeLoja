@@ -26,34 +26,6 @@ div{
 #titulo2{
     margin: 3% 0 0 0;
 }
-.data{
-    display: flex;
-    justify-content: left;
- 
-}
-#data {
-    width: 97%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
-#data1 {
-    width: 80%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;     
-}
-
-.botao{
-    width: 15%;
-    justify-self: end;
-}
 .CampoMovimentacao{
     display: flex;
     width: 100%;
@@ -64,6 +36,56 @@ div{
     width: 100%;
     justify-content: space-between;
 }
+
+.datamets{
+    display: flex;
+}
+#dataped {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+#dataped1 {
+    width: 70%;
+    margin-left: 90px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+.Table{
+    display: grid;
+    width: 70%;
+    margin: 0 0 0 0;
+}
+.Campo4{
+    margin: -115px 0 0 0;
+}
+.botaomov{
+    display: grid;
+    justify-self: end;
+    width: 10%;
+    margin: 5px 0 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .datamets{
+        display: grid;
+        justify-self: center;
+    }
+    .botaomov{
+        display: grid;
+        justify-self: center;
+    }
+}
+
 /*css pedido e troca*/
 .Ped{
     width: 30%;
@@ -76,6 +98,37 @@ div{
 .buton{
     width: 10%;
 }
+.datamets{
+    display: flex;
+}
+#datamovimentacao {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+#datamovimentacao1 {
+    width: 70%;
+    margin-left: 90px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;    
+} 
+
+.botaomov{
+    display: grid;
+    justify-self: end;
+    width: 10%;
+    margin: 5px 0 0 0;
+}
+
 
 /*css lançamento*/
 
