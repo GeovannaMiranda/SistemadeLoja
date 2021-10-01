@@ -1,4 +1,8 @@
+.container{
+    display: grid;
+    grid-gap: 5px;
 
+}
 #linha{
     width: 100%;
     margin-left: 0;

@@ -98,7 +98,7 @@ const Movimentacoes = (props) => {
                     <TextField label="Nome Cliente"/>
                     <TextField label="CPF/CNPJ"/>
                 </div>
-                <Button color='btn btn-primary' className="botao">Filtrar</Button>
+                <Button color='btn btn-primary' className="botaomov">Filtrar</Button>
             </Container>
         </div>
     );

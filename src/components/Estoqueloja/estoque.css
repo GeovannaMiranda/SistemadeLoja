@@ -14,22 +14,34 @@ div{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 25px 0 0 0;
+}
+
+.selectestoqueloja{
+    margin: -10px 0 0 0;
+    width: 100%;
 }
 .Campo1{
     display: flex;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;   
 }
 #Campo{
-    width: 40%;
+    width: 100%;
 }
 .Campo2{
     display: grid;
     width: 30%;
     justify-self: end;
-    margin: 20% 0 0 0;
+ 
     
 }
 .Botaofil{
     width: 10%;
 
+}
+
+.Tableestoqueloja{
+    display: grid;
+    width: 65%;
+    margin: 10px 0 0 0;
 }

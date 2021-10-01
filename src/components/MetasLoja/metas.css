@@ -1,11 +1,11 @@
 .Corpo{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
-.Cabecalho{
+.container{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
 
 }
 #Titulo1{
@@ -130,6 +130,12 @@ div .Botao{
 }
 .Campo4{
     margin: -115px 0 0 0;
+}
+.botaomov{
+    display: grid;
+    justify-self: end;
+    width: 10%;
+    margin: 5px 0 0 0;
 }
 
 

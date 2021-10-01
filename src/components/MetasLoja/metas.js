@@ -55,8 +55,9 @@ const Metasloja = (props) => {
 
     return (
 
-        <div class='container'>
-           
+        <div>
+           <MenuSuperior/>
+           <div class='container'>
                 <div>
                     <h2 id="Titulo1">Acompanhamento de Metas</h2>
                     <hr></hr>
@@ -129,7 +130,7 @@ const Metasloja = (props) => {
 
                 <h6 className="meta">Meta mensal:</h6>
           
-
+             </div>
         </div>
     );
 }

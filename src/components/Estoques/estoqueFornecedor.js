@@ -23,9 +23,6 @@ const EstoqueFornecedor = (props) => {
                     <Button id='botao' color='btn btn-primary'>Filtrar</Button>
                 </div>
 
-
-
-             
                     <StickyTable className="Table">
                         <Cell style={{ background: '#007bff', color: 'white' }}>#</Cell>
                         <Cell style={{ background: '#007bff', color: 'white' }}>Fornecedor</Cell>

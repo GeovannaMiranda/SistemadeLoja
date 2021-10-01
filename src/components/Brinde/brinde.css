@@ -1,0 +1,22 @@
+.logobrinde{
+    display: grid;
+    width: 30%;
+    justify-self: center;
+    margin: 60px;
+}
+.campobrinde{
+    display: grid;
+    width: 50%;
+    justify-self: center;
+}
+
+.labelbrinde{
+    display: grid;
+    margin: 20px 0 0 0;
+    justify-self: center;
+}
+.botaobrinde{
+    display: grid;
+    margin: 15px 0 0 0;
+   
+}
