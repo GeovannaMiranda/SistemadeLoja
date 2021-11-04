@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-//import { Button, Container } from "reactstrap";
 import { Row, Cell, StickyTable } from 'react-sticky-table';
 import "../menuSuperior/MenuSuperior"
 import "../MetasLoja/metas.css";
+import { TextField } from "@material-ui/core";
 
-import DatePicker from 'react-datepicker';
-import "react-datepicker/dist/react-datepicker.css";
 import moment from 'moment';
 import { ptBR } from 'date-fns/locale'
 import MenuSuperior from "../menuSuperior/MenuSuperior";
+import { Label } from "reactstrap";
 
 
 const for_cod = localStorage.getItem('for_cod')
@@ -36,21 +35,36 @@ const Metasloja = (props) => {
     }
 
 
-    const [selectDateIni, setSelectDateIni] = useState(null);
-
-
-    const onChange = selectDateIni => {
-        setSelectDateIni(selectDateIni);
+    const [selectDateIni, setSelectDateIni] = useState(null);   
+    const [isActive, setIsActive] = useState(false)
+    function onChange(ev) {
+        const {
+            name, value
+        } = ev.target;
+        setSelectDateIni(value); 
+        if (ev !== '') {
+            setIsActive(true);
+        } else {
+            setIsActive(false);
+        }
     }
 
-
-    const [selectDateFim, setSelectDateFim] = useState(null);
-
-    const onChange1 = selectDateFim => {
-        setSelectDateFim(selectDateFim);
+    const [selectDateFim, setSelectDateFim] = useState(null);    
+    const [isActive1, setIsActive1] = useState(false)
+    function onChange1(ev) {
+        const {
+            name, value
+        } = ev.target;
+        setSelectDateFim(value); 
+        if (ev !== '') {
+            setIsActive1(true);
+        } else {
+            setIsActive1(false);
+        }
     }
 
     const datainicial = moment(selectDateIni).format("YYYYMMDD")
+
     const datafinal = moment(selectDateFim).format("YYYYMMDD")
 
     return (
@@ -63,25 +77,23 @@ const Metasloja = (props) => {
                     <hr></hr>
                 </div>
                 <div className='CampoMetas'>
-                    <DatePicker
-                        id='data'
-                        placeholderText='Data inicial:'
-                        onChange={onChange}
-                        selected={selectDateIni}
+                   
+                    <TextField
+                        id='data'                  
+                        onChange={onChange}                     
                         locale={ptBR}
                         dateFormat="P"
                         withPortal
-                        type='reset'
+                        type='date'
                     />
-                    <DatePicker
-                        placeholderText='Data final:'
-                        id="data1"
-                        onChange={onChange1}
-                        selected={selectDateFim}
-                        locale={ptBR}
-                        dateFormat="P"
-                        withPortal
-
+                    
+                    <TextField
+                       id='data1'                  
+                       onChange={onChange1}                      
+                       locale={ptBR}
+                       dateFormat="P"
+                       withPortal
+                       type='date'
                     />
                     <button className="Botao" color='btn btn-primary'>Filtrar</button>
                 </div>

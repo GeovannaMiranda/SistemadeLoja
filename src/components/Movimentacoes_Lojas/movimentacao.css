@@ -19,122 +19,163 @@ div{
    margin: 5% 0 0 0;
 
 }
+#tipo{
+    margin: 0 -2% 1% 0;
+}
 .caixa{
     display: flex;
     justify-content: space-between;
 }
+#estilocheck1{
+    margin-left: -14%;
+}
+#estilocheck2{
+    margin-left: -14%;
+}
+#estilocheck3{
+    margin-left: -14%;
+}
+#estilocheck4{
+    margin-left: -14%;
+}
+#estilocheck5{
+    margin-left: -14%;
+}
+
 #titulo2{
     margin: 3% 0 0 0;
 }
-.CampoMovimentacao{
+.Campomovimentacao{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+
 .CampMovi{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-
-.datamets{
+.datamovimentacaocampo{
     display: flex;
-}
-#dataped {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
+    margin-bottom: 5%;
 
-#dataped1 {
-    width: 70%;
-    margin-left: 90px;
+
+   
+}
+#datamovimentacao{
+    width: 97%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
     outline: none;
     height: 2rem;
-    font-size: 17px;    
-} 
-.Table{
-    display: grid;
-    width: 70%;
-    margin: 0 0 0 0;
+    font-size: 17px;  
 }
-.Campo4{
-    margin: -115px 0 0 0;
+#datamovimentacao2{
+    width: 97%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #696969;                
+    outline: none;
+    height: 2rem;
+    font-size: 17px;  
+    
+    
 }
-.botaomov{
+.botaomovimentacao{
     display: grid;
+    width: 15%;
+    margin-bottom: 15px;
     justify-self: end;
-    width: 10%;
-    margin: 5px 0 20px 0;
 }
-
-@media screen and (max-width: 768px) {
-    .datamets{
+.hide {
+    display: none;
+   }
+@media screen and (max-width: 600px) {
+    .caixa{
         display: grid;
         justify-self: center;
+        font-family: sans-serif;
     }
-    .botaomov{
+   
+    #estilocheck1{
+        margin-left: -7%;
+        font-family: sans-serif;
+    }
+    #estilocheck2{
+        margin-left: -7%;
+        font-family: sans-serif;
+    }
+    #estilocheck3{
+        margin-left: -7%;
+        font-family: sans-serif;
+    }
+    #estilocheck4{
+        margin-left: -7%;
+        font-family: sans-serif;
+    }
+    #estilocheck5{
+        margin-left: -7%;
+        font-family: sans-serif;
+    }
+    h6{
+        margin-top: 25px;
+    }
+    .datamovimentacaocampo{
         display: grid;
-        justify-self: center;
+     
     }
-}
+    #datamovimentacao{
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 125%;
+    }
+    #datamovimentacao2{
+        margin-left: 20px;
+        width: 125%;
+    }
+    .Campomovimentacao{
+        display: grid;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #C1{
+        width: 100%;
+        margin-left: 20px;
+    }
+    #C2{
+        width: 90%;
+        margin-left: 105px;
+    }
+    #C3{
+        width: 90%;
+        margin-left: 20px;
+    }
+    #C4{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .botaomovimentacao{
+        width: 90%;
+        justify-self: center;
+        margin-top: 15px;
 
-/*css pedido e troca*/
-.Ped{
-    width: 30%;
-    justify-self: end;
-}
-.meta{
-    width: 30%;
-    justify-self: end;
-}
-.buton{
-    width: 10%;
-}
-.datamets{
-    display: flex;
-}
-#datamovimentacao {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
+    }
+ 
+    
 
-#datamovimentacao1 {
-    width: 70%;
-    margin-left: 90px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #696969;                
-    outline: none;
-    height: 2rem;
-    font-size: 17px;    
-} 
 
-.botaomov{
-    display: grid;
-    justify-self: end;
-    width: 10%;
-    margin: 5px 0 0 0;
 }
 
 
-/*css lançamento*/
 
-.CampoLan{
-    width: 40%;
-    justify-self: end;
-}
+
+
+
+
+
+
+
 
 

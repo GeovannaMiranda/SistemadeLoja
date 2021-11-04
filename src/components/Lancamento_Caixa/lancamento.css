@@ -1,6 +1,9 @@
+
 .CampLan{
     width: 20%;
     justify-self: end;
+    margin-left: 5%;
+    
 }
 #blan{
     width: 40%;
@@ -27,6 +30,107 @@
     width: 10%;
     margin-bottom: 25px;
 }
+.tabelaecampo{
+    display: flex;
+   
+}
 .Tabelalancamento{
     width: 70%;
+    overflow: auto;
+    max-height: 70vh;
+
+
+}
+.Cardlancamento{
+    background:  #007BFF;
+    margin: 5% 0 5% 0;
+    height: 100%;
+}
+.CardCampos{
+    display: grid;
+    width: 95%;
+    height: 50%;
+    margin-top: 3%;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 10%;
+    
+}
+.Camposlan{
+    display: flex;
+    align-items: center;
+}
+.CardCampos1{
+    display: grid;
+    justify-self: center;
+    width: 95%;
+    margin-bottom: 10%;
+
+}
+.Camposlan1{
+    display: grid;
+    margin-top: 2%;
+}
+h6{
+    margin: 0 2% -5% 2%;
+}
+.Camposelect1{
+    margin: 0 2% 0 2%;
+}
+
+
+.Camposlan2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+
+.Botoes2{
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 2%  2%;
+}
+
+.Cardlancamento2{
+    background-color: #007BFF;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cartao{
+    margin: 2% 2% 2% 2%;
+}
+
+
+@media  screen and (max-width: 600px) {
+    .Campolan{
+        display: grid;
+
+    }
+    #datalancamento{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .botaolancamento{
+        width: 55%;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+    .Tabelalancamento{
+        width: 100%;
+    }
+    .CampLan{
+        display: grid;
+        width: 90%;
+        justify-self: center;
+        margin-top: 15%;
+        margin-left: -1%;
+        margin-bottom: 5%;
+    }
+    .tabelaecampo{
+        display: grid;
+    }
+
 }

@@ -30,8 +30,8 @@ const MenuSuperior = (props) => {
         <Collapse isOpen={isOpen} navbar id="geral">
           <Nav className="mr-auto" navbar id="geral">
             <Nav>
-              <UncontrolledDropdown nav inNavbar href="/metas" >
-                <DropdownToggle nav caret><i className="material-icons md-36 souza-left ">attach_money</i>
+              <UncontrolledDropdown nav inNavbar href="/metas" className='link1'>
+                <DropdownToggle nav caret ><i className="material-icons md-36 souza-left ">attach_money</i>
                   Metas
                 </DropdownToggle>
                 <DropdownMenu>
@@ -44,18 +44,12 @@ const MenuSuperior = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown>              
             </Nav>
-            <NavItem >
+            <NavItem className='link2'>
               <NavLink href="/movimentacoes" id="menus"><i className="material-icons md-36 souza-left ">store</i>Movimentações Lojas</NavLink>
-            </NavItem>
-            <NavItem >
-              <NavLink href="/pedidotroca" id="menus"><i className="material-icons md-36 souza-left ">compare_arrows</i>Pedido - Troca</NavLink>
-            </NavItem>
-            <NavItem >
-              <NavLink href="/lancamento" id="menus"><i className="material-icons md-36 souza-left ">add_shopping_cart</i>Lançamento Caixa</NavLink>
             </NavItem>
             <Nav >
               <UncontrolledDropdown nav inNavbar href="/metas" >
-                <DropdownToggle nav caret ><i className="material-icons md-36 souza-left ">local_shipping</i>
+                <DropdownToggle nav caret className='link3' ><i className="material-icons md-36 souza-left ">local_shipping</i>
                   Estoques
                 </DropdownToggle>
                 <DropdownMenu>
@@ -68,7 +62,14 @@ const MenuSuperior = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-            <NavItem >
+            <NavItem className='link4' >
+              <NavLink href="/pedidotroca" id="menus"><i className="material-icons md-36 souza-left ">compare_arrows</i>Pedido - Troca</NavLink>
+            </NavItem>
+            <NavItem  className='link5'>
+              <NavLink href="/lancamento" id="menus"><i className="material-icons md-36 souza-left ">add_shopping_cart</i>Lançamento Caixa</NavLink>
+            </NavItem>
+            
+            <NavItem className='link6' >
               <NavLink href="/brinde" id="menus"><i className="material-icons md-36 souza-left ">redeem</i>Brinde</NavLink>
             </NavItem>
           </Nav>

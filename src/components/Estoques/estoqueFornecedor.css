@@ -27,10 +27,9 @@
     color: #363636;
 
 }
-.Campofornecedor{
-    display: grid;    
-    justify-self: end;
+.Campofornecedor{  
     width: 25%;
+    justify-self: end;
     
 }
 #botaofornecedor{
@@ -39,7 +38,41 @@
     margin: 12px;
     justify-self: end;
 }
+.campoetabela{
+    display: flex;
+    justify-content: space-between;
+}
 .tabelaestoquefornecedor{
-    width: 70%;
-    margin-top: 20px;
+    display: grid;
+    width: 68%;
+    max-height: 60vh;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Campoestoquefornecedor{
+        display: grid;
+        width: 90%;
+        justify-self: center;
+    }
+    #botaofornecedor{
+        width: 55%;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+    .tabelaestoquefornecedor{
+        width: 100%;
+    }
+
+    .Campofornecedor{
+        display: grid;
+        width: 90%;
+        justify-self: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .campoetabela{
+        display: grid;
+    }
+
 }

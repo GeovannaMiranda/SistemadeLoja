@@ -13,7 +13,6 @@
 .labelbrinde{
     display: grid;
     margin: 20px 0 0 0;
-
     justify-self: center;
 }
 .selectbrinde{
@@ -27,4 +26,30 @@
     justify-self: center;
     margin: 15px 0 0 0;
    
+}
+
+@media screen and (max-width: 600px) {
+    .logobrinde{
+        display: grid;
+        width: 40%;
+        justify-self: center;
+        margin: 100px;
+    }
+    .campobrinde{
+        display: grid;
+        width: 65%;
+        justify-self: center;
+      
+    }
+    .selectbrinde{
+        display: grid;
+        width: 85%;
+        justify-self: center;
+    }
+    .botaobrinde{
+        display: grid;
+        width: 85%;
+        justify-self: center;
+        margin: 15px 0 0 0;
+    }
 }

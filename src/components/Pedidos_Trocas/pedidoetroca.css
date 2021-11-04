@@ -2,19 +2,45 @@
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 5px;
+    overflow: none;
 }
 .containerpedido{
     display: grid;
     grid-gap: 5px;
     justify-content: center;
 
+
 }
-.h2{
+h2{
     margin: 5% 0 0 0;
+    font-family: sans-serif;
+    color: #007bff;
 }
-.hr{
+
+hr{
     width: 100%;
     margin-left: 0;
+}
+
+.Ped{
+    width: 30%;
+    justify-self: end;
+}
+.meta{
+    width: 30%;
+    justify-self: end;
+}
+.buton{
+    width: 10%;
+}
+.datamets{
+    display: flex;
+}
+.botaomov{
+    display: grid;
+    justify-self: end;
+    width: 10%;
+    margin: 5px 0 0 0;
 }
 #dt{
     width: 100%;
@@ -32,7 +58,7 @@
 .Tabelapedido{
     display: grid;
     width: 65%;
-    
+    overflow: auto;
 }
 
 .dataped{
@@ -71,5 +97,39 @@
     justify-self: end;
     width: 10%;
     margin: 5px 0 0 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    .dataped{
+        display: grid;
+        margin-top: 20px;
+
+    }    
+    #datapedido{
+        width: 90%;
+        margin-left: 20px;
+
+    }
+    .botaopedido{
+        width: 60%;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+    .Tabelapedido{
+        display: grid;
+        width: 100%;
+    }
+    .Ped{
+        display: grid;
+        width: 90%;
+        justify-self: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .botaopedido2{
+        margin-top: 15px;
+    }
+
 }
 

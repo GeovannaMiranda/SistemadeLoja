@@ -44,7 +44,6 @@ div .CampoMetas{
 } 
 #data1 {
     width: 90%;
-    margin-left: 50px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -53,7 +52,7 @@ div .CampoMetas{
     font-size: 17px;    
 } 
 div .Botao{
-    margin: 0 0 0 60px;
+    margin: 1% 0 0 60px;
     border-radius: none;
     border: none;
     width: 10%;
@@ -74,7 +73,55 @@ div .Botao{
     color: #007bff;
 }
 
+@media screen and (max-width: 600px) {
+    div .CampoMetas{
+        display: grid;
+        margin: 20px 0 25px 0;
+        color: #363636;
+      
+    }
+    #data{
+        display: grid;
+        margin-left: 15px;
+        justify-content: space-between;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #696969;                
+        outline: none;
+        height: 2rem;
+        font-size: 17px;   
+    }
+    #data1 {
+        width: 90%;
+        margin-left: 15px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #696969;                
+        outline: none;
+        height: 2rem;
+        font-size: 17px;    
+    } 
 
+    div .Botao{
+        width: 50%;
+        height: 35px;
+        margin-left: 25%;
+        font-size: 17px;
+        color: #fff;
+        background: #007bff;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    
+    }
+   .meta{
+       margin-top: 20px;
+   }
+   
+    
+
+    
+}
 
 
 

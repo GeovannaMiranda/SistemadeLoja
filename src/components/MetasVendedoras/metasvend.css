@@ -39,7 +39,6 @@
 } 
 #datamet1 {
     width: 90%;
-    margin-left: 50px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -48,3 +47,106 @@
     font-size: 17px;  
       
 } 
+
+.card1{
+    height: 150%;
+}
+.barra1{
+    display: flex;
+    justify-content: space-between;
+}
+#estilobarra{
+    width: 80%;
+    grid-gap: 0;
+    justify-self: end;
+}
+
+.titulocard{
+    background: #007BFF;
+    font-family: sans-serif;
+    color: #FFF;
+    width: 100%;
+    margin: 0 -5% 0 0;
+    height: 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card2{
+    margin: 25% 0 5% 0;
+    height: 35%;
+
+}
+.titulocard1{
+    background: #007BFF;
+    font-family: sans-serif;
+    color: #FFF;
+    width: 100%;
+    margin: 0 -5% 0 0;
+    height: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+.barra2{
+    display: flex;
+    justify-content: space-between;
+}
+#estilobarra1{
+    width: 85%;
+    grid-gap: 0;
+    justify-self: end;
+}
+
+.card3{
+    margin: 5% 0 5% 0;
+    height: 65%;
+
+}
+.titulocard2{
+    background: #007BFF;
+    font-family: sans-serif;
+    color: #FFF;
+    width: 100%;
+    margin: 0 -5% 0 0;
+    height: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+.barra3{
+    display: flex;
+   
+    justify-content: space-between;
+}
+#estilobarra2{
+    width: 85%;
+    grid-gap: 0;
+    justify-self: end;
+}
+@media screen and (max-width: 600px) {
+    .Campomet{
+        display: grid;
+        margin-bottom: 10px;
+    }
+    #datamet{
+        width: 85%;
+        margin-left: 22px;
+    }
+    #datamet1{
+        width: 85%;
+        margin-left: 22px;
+    }
+    #Botao{
+        justify-self: center;
+        width: 50%;
+    }
+
+    .progresso{
+        margin-bottom: 20px;
+    }
+}
