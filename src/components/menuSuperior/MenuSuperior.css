@@ -29,19 +29,19 @@ nav a.navbar-brand {
 }
 .link3{
     margin-top: 1%;
-    margin-left: -10%;
+    margin-left: 2%;
 }
 .link4{
-    margin-left: -9%;
+    margin-left: 4%;
     margin-top: 1%;
 }
 .link5{
     margin-top: 1%;
-    margin-left: 2%;
+    margin-left: -8%;
 }
 .link6{
     margin-top: 1%;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 @media screen and (max-width: 600px) {
     #li1{

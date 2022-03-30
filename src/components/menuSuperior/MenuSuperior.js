@@ -47,9 +47,12 @@ const MenuSuperior = (props) => {
             <NavItem className='link2'>
               <NavLink href="/movimentacoes" id="menus"><i className="material-icons md-36 souza-left ">store</i>Movimentações Lojas</NavLink>
             </NavItem>
+            <NavItem className='link3'>
+              <NavLink href="/movpedidotroca" id="menus"><i class="material-icons md-36 souza-left">account_circle</i>Movimentações Clientes</NavLink>
+            </NavItem>
             <Nav >
-              <UncontrolledDropdown nav inNavbar href="/metas" >
-                <DropdownToggle nav caret className='link3' ><i className="material-icons md-36 souza-left ">local_shipping</i>
+              <UncontrolledDropdown nav inNavbar href="/metas" className='link4' >
+                <DropdownToggle nav caret className='link4' ><i className="material-icons md-36 souza-left ">local_shipping</i>
                   Estoques
                 </DropdownToggle>
                 <DropdownMenu>
@@ -62,10 +65,10 @@ const MenuSuperior = (props) => {
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-            <NavItem className='link4' >
+            <NavItem className='link5' >
               <NavLink href="/pedidotroca" id="menus"><i className="material-icons md-36 souza-left ">compare_arrows</i>Pedido - Troca</NavLink>
             </NavItem>
-            <NavItem  className='link5'>
+            <NavItem  className='link6'>
               <NavLink href="/lancamento" id="menus"><i className="material-icons md-36 souza-left ">add_shopping_cart</i>Lançamento Caixa</NavLink>
             </NavItem>
             

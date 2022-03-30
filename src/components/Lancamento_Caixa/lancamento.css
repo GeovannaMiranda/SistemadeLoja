@@ -93,15 +93,21 @@ h6{
 }
 
 .Cardlancamento2{
-    background-color: #007BFF;
+    background-color: #ffff;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
 .cartao{
     margin: 2% 2% 2% 2%;
+    background-color: #007BFF;
 }
 
+.Modal1{
+  display: grid ;
+  justify-content: center;
+  width: 200%;
+}
 
 @media  screen and (max-width: 600px) {
     .Campolan{

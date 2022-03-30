@@ -8,6 +8,8 @@ import Metasloja from "./components/MetasLoja/metas";
 import MetasVendedoras from "./components/MetasVendedoras/metasvend";
 import Movimentacoes from "./components/Movimentacoes_Lojas/movimentacoes";
 import PedidoTroca from "./components/Pedidos_Trocas/pedidoetroca";
+import Movpedidotroca from "./components/Movclientepedidotroca/movpedidotroca";
+
 
 export default function Routes(){
     return(
@@ -16,6 +18,7 @@ export default function Routes(){
                 <Route path = "/" exact component={Metasloja}/>
                 <Route path = "/metasvendedoras" component={MetasVendedoras}/>
                 <Route path = "/movimentacoes"  component={Movimentacoes}/>
+                <Route path= "/movpedidotroca" component={Movpedidotroca}/>
                 <Route path = "/estoquefornecedor" component={EstoqueFornecedor}/>
                 <Route path = "/estoque"   component={EstoqueLoja}/>
                 <Route path = "/lancamento" component={Lancamento}/>
