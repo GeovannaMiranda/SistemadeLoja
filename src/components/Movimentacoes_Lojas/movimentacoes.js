@@ -250,6 +250,7 @@ const Movimentacoes = (props) => {
 
                 <h6 id='titulo2'>Data de Movimentação</h6>
                 <div className='datamovimentacaocampo'>
+                    <div className="campo-de">
                     <TextField
                         id='datamovimentacao'                  
                         onChange={onChange}                     
@@ -257,17 +258,23 @@ const Movimentacoes = (props) => {
                         dateFormat="P"
                         withPortal
                         type='date'
+                        label='De:'
+                        focused
                     />
-                    
+                    </div>
+                    <div className="campo-ate">
                     <TextField
+                       className="campo-ate"
                        id='datamovimentacao2'                  
                        onChange={onChange1}                      
                        locale={ptBR}
                        dateFormat="P"
                        withPortal
                        type='date'
+                       label='Até:'
+                       focused
                     />
-                   
+                   </div>
                 </div>
                 <div className='Campomovimentacao ' >
                     <TextField onChange={onChange6} id='C1' label="Fornecedores" />

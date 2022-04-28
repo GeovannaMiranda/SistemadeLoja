@@ -85,6 +85,8 @@ const Metasloja = (props) => {
                         dateFormat="P"
                         withPortal
                         type='date'
+                        label='De:'
+                        focused
                     />
                     
                     <TextField
@@ -94,6 +96,8 @@ const Metasloja = (props) => {
                        dateFormat="P"
                        withPortal
                        type='date'
+                       label='Até:'
+                       focused
                     />
                     <button className="Botao" color='btn btn-primary'>Filtrar</button>
                 </div>

@@ -1,0 +1,70 @@
+body{
+    padding: 0rem;
+    margin:  0rem;
+    font-family: sans-serif;
+
+}
+
+.Titulo{
+    margin-top: 4%;
+    margin-left: 8%;
+}
+hr{
+    width: 93%;
+}
+h2{
+    font-family: sans-serif;
+    color: #007bff;
+}
+.Selecao{
+    margin: 7rem;
+    margin-top: 3%;
+}
+
+.Campo-checkbox{
+    display: grid;
+}
+.Pedido{
+    display: flex;
+}
+.Troca{
+    display: flex;
+}
+
+.Cabecalho-modal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Campo-data{
+    display: flex;
+    margin: 7rem;
+    margin-top: -5%;
+}
+
+.campo-modal{
+    width: 200rem;
+    height: 30rem;
+}
+.campo-codfab{
+    margin-left: 4rem;
+}
+.campo-codpro{
+    margin-left: 4rem;
+}
+.campo-botao{
+    margin-left: 2rem;
+
+    
+}
+
+.material-icons:hover{
+    color: #fff;
+    background: none;
+}
+
+.campo-tabela{
+    margin-left: 7rem;
+    margin-top: -3%;
+    max-width: 85%;
+}

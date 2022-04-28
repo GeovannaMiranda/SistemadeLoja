@@ -103,7 +103,8 @@ const MetasVendedoras = (props) => {
                         dateFormat="P"
                         withPortal
                         type='date'
-                        Label='De:'
+                        label='De:'
+                        focused
                     />
 
                     <TextField
@@ -113,6 +114,8 @@ const MetasVendedoras = (props) => {
                         dateFormat="P"
                         withPortal
                         type='date'
+                        label='Até:'
+                        focused
                     />
                     <Button id='Botao' color='btn btn-primary'>Filtrar</Button>
                 </div>

@@ -1,6 +1,5 @@
 div{
     display: grid;
-    grid-template-columns: repeat(3. 1fr);
     grid-gap: 10px;
 
 }
@@ -58,13 +57,13 @@ div{
 }
 .datamovimentacaocampo{
     display: flex;
+    margin-top: 2%;
     margin-bottom: 5%;
-
 
    
 }
 #datamovimentacao{
-    width: 97%;
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -72,8 +71,9 @@ div{
     height: 2rem;
     font-size: 17px;  
 }
+
 #datamovimentacao2{
-    width: 97%;
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #696969;                
@@ -81,7 +81,13 @@ div{
     height: 2rem;
     font-size: 17px;  
     
-    
+}
+.campo-de{
+    width: 17%;
+}
+.campo-ate{
+    margin-left: 9%;
+    width: 42%;
 }
 .botaomovimentacao{
     display: grid;
@@ -91,7 +97,7 @@ div{
 }
 .hide {
     display: none;
-   }
+}
 @media screen and (max-width: 600px) {
     .caixa{
         display: grid;
